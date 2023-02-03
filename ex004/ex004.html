@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,11 @@
 <body>
     <h1>Testando JScript</h1>
     <script>
-        var nome = window.prompt("Seu nome: ")
-        document.write(`Olá <strong>${nome}</strong>, o seu nome tem ${nome.length} letras.<br/>`)
-        document.write(`Em maiúsculo fica <strong>${nome.toUpperCase()}</strong> <br/>`)
-        document.write(`O nome em minúsculo é <strong>${nome.toLowerCase()}</strong>`)
+        var nome = window.prompt('Digite o seu nome: ')
+        document.write (`Olá, <strong>${nome}</strong>, seja bem vindo!`)
+        document.write (`O seu nome <strong>${nome}</strong> possuí ${nome.length} letras. <br/>`)
+        document.write (`O seu nome todo em maiúsculo fica, <strong>${nome.toUpperCase()}</strong>. <br/>`)
+        document.write (`O seu nome todo em minúsculo fica <strong>${nome.toLowerCase()}</strong>. <br/>`)
     </script>
 </body>
 </html>
