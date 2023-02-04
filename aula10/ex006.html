@@ -36,17 +36,28 @@
     </style>
   </head>
   <body>
-    <div id="clique" onclick="clicar()">
+    <div id="clique">
       <p>Clique aqui</p>
     </div>
 
     <script>
-      var clic =  window.document.querySelector('div#clique');
+      var a =  window.document.querySelector('div#clique')
+      a.addEventListener('click', clicar)
+      a.addEventListener('mouseenter', entrar)
+      a.addEventListener('mouseout', sair)
+
       function clicar () {
-        if (clic.innerText == 'Clique aqui'){
-          clic.innerText = 'Clicou';
-        } else{
-          clic.innerText = 'Clique aqui';
+        if (a.innerText != 'Clique Aqui') {
+          a.innerText = 'Clicou'
+        }
+      }
+      function entrar() {
+        a.innerText = 'Entrou'
+      }
+      function sair() {
+        a.innerText = 'Saiu'
+        if (a.innerText == 'Saiu') {
+          a.innerText = 'Clique Aqui'
         }
       }
     </script>
