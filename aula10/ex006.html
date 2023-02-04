@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #35363a;
+      }
+      div#clique {
+        width: 200px;
+        height: 200px;
+        background-color: #00201dff;
+        border: 2px solid black;
+        text-align: center;
+        line-height: 200px;
+        color: white;
+        font-size: 1.4em;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      div#clique:hover {
+        background-color: rgb(1, 85, 77);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="clique" onclick="clicar()">
+      <p>Clique aqui</p>
+    </div>
+
+    <script>
+      var clic =  window.document.querySelector('div#clique');
+      function clicar () {
+        if (clic.innerText == 'Clique aqui'){
+          clic.innerText = 'Clicou';
+        } else{
+          clic.innerText = 'Clique aqui';
+        }
+      }
+    </script>
+  </body>
+</html>
