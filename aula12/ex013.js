@@ -1,7 +1,7 @@
 // verificador de horário para enviar uma mensagem
 
-// var agora = agora ()
-var horario = 21;
+var agora = new Date()
+var horario = agora.getHours;
 
 if (horario >= 5 && horario < 12) {
   console.write("Bom dia!");
