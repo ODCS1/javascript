@@ -1,3 +1,5 @@
+//  Verificador de idade para condições de voto
+ 
  var idade = 16;
 
  if (idade < 16){
