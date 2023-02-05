@@ -1,5 +1,4 @@
-var escreva = 'Olá, tudo bem?'
-var cont = 1
+ var cont = 1
 
 // while (cont <= 3){
 //   console.log(`Passo ${cont}`)
