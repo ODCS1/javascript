@@ -24,6 +24,16 @@ main{
   border-radius: 10px;
   padding: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.511);
+  text-align: center;
+}
+img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 footer{
@@ -31,4 +41,11 @@ footer{
   color: white;
   text-align: center;
   font-style: italic;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
 }
