@@ -12,21 +12,24 @@
     <h1>Vefiricador de Idade</h1>
   </header>
   <main>
-    <p>
-      <label for="iano">Ano de Nascimento: </label>
-      <input type="date" name="ano" id="iano">
-    </p>
-    <p>
-      Sexo: 
-      <input type="radio" name="genm" id="igenm">
-      <label for="igenm">Masculino</label>
-      <input type="radio" name="genf" id="igenf">
-      <label for="igenf">Feminino</label>
-    </p>
-
+      <p>
+        <label for="iano">Ano de Nascimento: </label>
+        <input type="number" name="ano" id="iano" value="2023">
+      </p>
+      <p>
+        Sexo:
+        <input type="radio" name="gen" id="igenm" value="h">
+        <label for="igenm">Masculino</label>
+        <input type="radio" name="gen" id="igenf" value="m">
+        <label for="igenf">Feminino</label>
+      </p>
+      <button onclick="verificar()">Verificar</button>
+    <div id="conteudo">
+      Preencha os Dados acima para ver o resultado!
+    </div>
   </main>
   <footer>
-    <p>Feito por <a href="https://github.com/ODCS1">ODCS</a></p>
+    <p>Feito por <a href="https://github.com/ODCS1" target="_blank">ODCS</a></p>
   </footer>
 
   <script src="script.js"></script>
