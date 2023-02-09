@@ -1,19 +1,19 @@
 function contar() {
   // Mensagem
-  var msg = document.querySelector("div#res");
+  let msg = document.querySelector("div#res");
 
   // Contar
-  var inicio = document.querySelector("input#istart");
-  var fim = document.querySelector("input#iend");
-  var passo = document.querySelector("input#ipasso");
-  var i = Number(inicio.value);
-  var f = Number(end.value);
-  var p = Number(passo.value);
+  let inicio = document.querySelector("input#istart");
+  let fim = document.querySelector("input#iend");
+  let passo = document.querySelector("input#ipasso");
 
-  if (i == 0 || f == 0 || p == 0) {
-    msg.innerHTML = "[ERRO] tente novamente";
+  if (i.length == 0 || f.length == 0 || p.length == 0) {
+    window.alert("[ERRO] tente novamente");
   } else {
     msg.innerHTML = "Contando: ";
+    let i = Number(inicio.value);
+    let f = Number(end.value);
+    let p = Number(passo.value);
     if (i < f && p > 0) {
       for (var c = i; c <= f; c += p) {
         msg.innerHTML += `${c} \u{1F449}`;
